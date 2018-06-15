@@ -1,0 +1,17 @@
+<section  class="new-maintainer" fxLayout fxLayoutAlign="center">
+  <mat-card fxFlex="400px">
+    <mat-card-title fxLayout fxLayoutAlign="center">Add Maintainer</mat-card-title>
+    <mat-card-content>
+      <mat-form-field fxLayout fxLayoutAlign="center">
+        <mat-select placeholder="Speciality">
+          <mat-option *ngFor="let maintenance of maintenanceList" [value]="maintenance.id">
+            {{maintenance.category}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button type="submit" color="primary" mat-raised-button>Add</button>
+    </mat-card-actions>
+  </mat-card>
+</section>
